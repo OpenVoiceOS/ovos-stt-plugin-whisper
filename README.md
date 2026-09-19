@@ -1,7 +1,6 @@
 ## Description
 
-OpenVoiceOS STT plugin for [Whisper](https://github.com/guillaumekln/faster-whisper), using transformers library
-
+This is an OpenVoiceOS STT plugin for [Whisper](https://github.com/guillaumekln/faster-whisper). It uses the `transformers` library to run the model.
 
 ## Install
 
@@ -9,7 +8,7 @@ OpenVoiceOS STT plugin for [Whisper](https://github.com/guillaumekln/faster-whis
 
 ## Configuration
 
-to use Large model with GPU
+This example uses the large model with a GPU.
 
 ```json
   "stt": {
@@ -21,5 +20,10 @@ to use Large model with GPU
   }
 ```
 
-you can also pass a full path to a local model or any huggingface repo_id,
-eg. `"projecte-aina/whisper-large-v3-ca-3catparla"`
+You can also pass the full path to a local model, or any Hugging Face `repo_id`, for example `"projecte-aina/whisper-large-v3-ca-3catparla"`.
+
+## Related projects
+
+- [OpenVoiceOS/ovos-plugin-manager](https://github.com/OpenVoiceOS/ovos-plugin-manager): the plugin manager that loads this STT plugin.
+- [OpenVoiceOS/ovos-stt-plugin-whispercpp](https://github.com/OpenVoiceOS/ovos-stt-plugin-whispercpp): a sibling plugin that runs Whisper with `whisper.cpp`.
+- [OpenVoiceOS/ovos-stt-plugin-whisper-lm](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm): a sibling plugin that adds language-model rescoring to Whisper.
